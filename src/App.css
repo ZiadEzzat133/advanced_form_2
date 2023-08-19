@@ -1,12 +1,37 @@
+
 .App {
   text-align: center;
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&family=Noto+Sans+TC&family=REM&family=Roboto+Condensed:wght@700&family=Space+Grotesk:wght@400;500&display=swap');
+p
+{
+  font-weight: 700;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.largediv
+{
+  width: 60%;
+  margin:auto;
+  margin-top: 3%;
+}
+@media screen and (max-width:900px) {
+  .largediv
+  {
+    width: 80%;
+    margin-top: 10%;
+  }
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
+.signup
+{
+  font-family: 'Space Grotesk', sans-serif;
+  color:rgb(68, 68, 252);
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
