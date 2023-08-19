@@ -40,7 +40,7 @@ const FORM_VALIDATION = yup.object().shape({
   departuredate: yup.date().required("Departure date is required").min(
     yup.ref('arrivaldate'),
     "Departure date can't be before Arrival date"
-  ).min(new Date(), 'Date cannot be in the past'),
+  ),
   message: yup.string(),
   terms: yup.boolean().oneOf([true], "You must accept terms and conditions").required("You must accept terms and conditions"),
 });
